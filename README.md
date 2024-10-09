@@ -13,6 +13,6 @@ O intuito desse projeto é criar um aplicativo biográfico de Hans Zimmer, um co
 - <a href="https://github.com/Meira-Lucas/Hans-Zimmer-APP/wiki/Prot%C3%B3tipo">Protótipo</a>
 - <a href="https://github.com/Meira-Lucas/Hans-Zimmer-APP/wiki/Descri%C3%A7%C3%A3o-do-Desenvolvimento">Descrição do Desenvolvimento</a>
 
-- <a href="https://github.com/Meira-Lucas/Hans-Zimmer-APP/wiki/Prot%C3%B3tipo-Vers%C3%A3o-Final">Protótipo Versão Final</a>
+- <a href="https://github.com/Meira-Lucas/Hans-Zimmer-APP/wiki/Prot%C3%B3tipo-Vers%C3%A3o-Final">Versão Final</a>
 
 
