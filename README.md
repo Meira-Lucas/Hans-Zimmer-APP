@@ -1,1 +1,6 @@
-# Hans-Zimmer-APP
+# Alunos
+- Lucas Carvalho
+- Vincenzo Monaco
+# Hans-Zimmer
+
+
