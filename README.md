@@ -2,8 +2,10 @@
 - Lucas Carvalho
 - Vincenzo Monaco
 
-# Trabalho sobre 
+# Aplicativo sobre Hans Zimmer
 
-# Hans-Zimmer
+O intuito desse projeto é criar um aplicativo biográfico de Hans Zimmer, um compositor alemão, reconhecido por seus trabalhos em trilhas sonoras de filmes famosos
+
+
 
 
