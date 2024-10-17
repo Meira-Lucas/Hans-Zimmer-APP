@@ -4,6 +4,8 @@
 
 # Aplicativo sobre Hans Zimmer
 
+![download](https://github.com/user-attachments/assets/7110e7c3-c88d-4996-b7bb-2433ef04ff3f)
+
 O intuito desse projeto é criar um aplicativo biográfico de Hans Zimmer, um compositor alemão, reconhecido por seus trabalhos em trilhas sonoras de filmes famosos
 
 # Links WIKI
