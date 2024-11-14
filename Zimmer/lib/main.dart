@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
 import 'Biography.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: LoadingScreen(), // Define a LoadingScreen como tela inicial
+    );
+  }
+}
+
 class LoadingScreen extends StatefulWidget {
   @override
   _LoadingScreenState createState() => _LoadingScreenState();
@@ -23,12 +36,10 @@ class _LoadingScreenState extends State<LoadingScreen>
 
     _controller.forward();
 
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 5), () {
       _controller.reverse().then((_) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-              builder: (context) =>
-                  BiographyScreen()), // Substitua por sua tela de destino
+          MaterialPageRoute(builder: (context) => BiographyScreen()),
         );
       });
     });
@@ -48,26 +59,35 @@ class _LoadingScreenState extends State<LoadingScreen>
         children: [
           // Imagem de fundo com URL
           Image.network(
-            'https://www.dropbox.com/scl/fi/gtk4upktuoe3a4ndujt3a/92d5b2f4-4b69-4d87-8614-4014132ef204.jpg?rlkey=5lvrye0zhc5itxoy37n7nq3vj&st=rvt596og&raw=1',
+            'https://www.dropbox.com/scl/fi/6tq4l8ktgpdmjeofm9i7l/images.jpg?rlkey=7axde64bu472fi3m0gmzsbec2&st=i417wcrj&raw=1',
             fit: BoxFit.cover,
           ),
           // Camada escurecida
           Container(
-            color: Colors.black
-                .withOpacity(0.6), // Ajuste a opacidade conforme necessário
+            color: Colors.black.withOpacity(0.6),
           ),
-          // Conteúdo da tela de carregamento
+          // Conteúdo principal da tela de carregamento
           Center(
             child: FadeTransition(
               opacity: _animation,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.music_note, size: 100, color: Colors.white),
+                  // Imagem central
+                  Image.network(
+                    'https://www.dropbox.com/scl/fi/gtk4upktuoe3a4ndujt3a/92d5b2f4-4b69-4d87-8614-4014132ef204.jpg?rlkey=5lvrye0zhc5itxoy37n7nq3vj&st=rvt596og&raw=1',
+                    width: 150,
+                    height: 150,
+                  ),
                   SizedBox(height: 20),
+                  // Título
                   Text(
-                    'Carregando...',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    'Hans Zimmer',
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
