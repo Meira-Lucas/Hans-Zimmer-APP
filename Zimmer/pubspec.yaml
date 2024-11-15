@@ -10,7 +10,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.0.5
-
+  audioplayers: ^0.20.1
+  url_launcher: ^6.0.20
+ 
 flutter_native_splash:
   color: "#ffffff"
   android: true
